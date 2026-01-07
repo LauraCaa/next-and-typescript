@@ -22,9 +22,14 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <main  className="text-center">
       <h1>Welcome to Next.js!</h1>
-      <button onClick={addNewFox}>Add new fox</button>
+      <div className="m-4">
+        <button 
+          onClick={addNewFox}
+          className="py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >Add new fox</button>
+      </div>
       {images.map(({ id, url }) => (
         <div key={id} className="p-4">
           <RandomFox image={url} />
