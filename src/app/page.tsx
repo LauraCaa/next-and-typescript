@@ -4,7 +4,6 @@ import { useState } from "react";
 import RandomFox from "@/components/RandomFox";
 import { MouseEventHandler } from "react";
 
-type ImageItems = { id: string; url: string };
 
 const random = () => Math.floor(Math.random() * 123) + 1;
 const generatedId = () => Math.random().toString(36).substring(2, 9);
